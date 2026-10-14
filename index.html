@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이시웅 | Data & AI Pipeline Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+    body { font-family: 'Pretendard', sans-serif; }
+    .modal-enter { animation: fadeIn 0.2s ease-out; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.96); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-indigo-500 selection:text-white">
+
+  <!-- Main Container (Minimal Dashboard Layout) -->
+  <main class="max-w-4xl mx-auto px-6 py-16 w-full">
+    
+    <!-- Minimal Hero Header -->
+    <header class="mb-12 border-b border-slate-800 pb-8 flex flex-col md:flex-row md:items-end justify-between gap-6">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 mb-3 text-xs font-semibold text-indigo-400 bg-indigo-500/10 border border-indigo-500/20 rounded-full">
+          <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
+          Data Engineer & AI Pipeline Portfolio
+        </div>
+        <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-white">
+          이시웅 <span class="text-slate-500 font-normal text-2xl">| Siwoong Lee</span>
+        </h1>
+        <p class="text-slate-400 mt-2 text-sm md:text-base">
+          실시간 데이터 파이프라인 구축부터 AI 모델 학습용 데이터 정제·서빙까지 연결하는 엔지니어입니다.
+        </p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="flex gap-3 text-sm">
+        <a href="https://github.com/" target="_blank" class="px-3.5 py-2 bg-slate-900 hover:bg-slate-800 border border-slate-800 rounded-lg text-slate-300 transition flex items-center gap-2">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="mailto:your-email@hanyang.ac.kr" class="px-3.5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white font-medium rounded-lg transition flex items-center gap-2">
+          <i class="fa-regular fa-envelope"></i> Contact
+        </a>
+      </div>
+    </header>
+
+    <!-- Core Metrics / Summary Bar -->
+    <section class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12">
+      <div class="bg-slate-900/50 border border-slate-800/80 rounded-xl p-4">
+        <div class="text-xs text-slate-400">Education</div>
+        <div class="font-bold text-sm mt-1">한양대학교 4학년</div>
+        <div class="text-xs text-slate-500">컴퓨터소프트웨어 / 정보시스템</div>
+      </div>
+      <div class="bg-slate-900/50 border border-slate-800/80 rounded-xl p-4">
+        <div class="text-xs text-slate-400">Core Stack</div>
+        <div class="font-bold text-sm mt-1">Python · C++ · SQL</div>
+        <div class="text-xs text-slate-500">Asyncio, GCP, Firestore</div>
+      </div>
+      <div class="bg-slate-900/50 border border-slate-800/80 rounded-xl p-4">
+        <div class="text-xs text-slate-400">Data & AI Award</div>
+        <div class="font-bold text-sm mt-1">CDS 빅데이터 우수상</div>
+        <div class="text-xs text-slate-500">데이터 파이프라인 & 시각화</div>
+      </div>
+      <div class="bg-slate-900/50 border border-slate-800/80 rounded-xl p-4">
+        <div class="text-xs text-slate-400">Global Communication</div>
+        <div class="font-bold text-sm mt-1">JPT 895 / OPiC AL</div>
+        <div class="text-xs text-slate-500">비즈니스 레벨 일본어</div>
+      </div>
+    </section>
+
+    <!-- Guide Text -->
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="text-lg font-bold text-slate-200">Featured Experience & Projects</h2>
+      <span class="text-xs text-indigo-400"><i class="fa-regular fa-hand-pointer mr-1"></i>카드를 클릭하면 상세 아키텍처와 성과를 볼 수 있습니다</span>
+    </div>
+
+    <!-- Interactive Cards Grid (Minimal Front) -->
+    <section class="grid md:grid-cols-2 gap-4">
+
+      <!-- Card 1: LG Electronics Internship -->
+      <button onclick="openModal('lg-intern')" class="text-left group bg-slate-900/60 hover:bg-slate-900 border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-6 transition-all duration-200 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-xs font-semibold px-2.5 py-1 bg-rose-500/10 text-rose-400 border border-rose-500/20 rounded-md">Work Experience</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-slate-600 group-hover:text-indigo-400 transition"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white group-hover:text-indigo-300 transition">LG전자 HS사업본부 인턴십</h3>
+          <p class="text-sm text-slate-400 mt-1 line-clamp-2">
+            다국어 음성(TTS) 서비스 상용화를 위한 비정형 음성·텍스트 데이터 전처리 파이프라인 구축 및 품질 고도화
+          </p>
+        </div>
+        <div class="flex gap-2 mt-5 text-xs text-slate-500">
+          <span>#DataPreprocessing</span>
+          <span>#TTS_Pipeline</span>
+          <span>#Python</span>
+        </div>
+      </button>
+
+      <!-- Card 2: Crypto Streaming Engine -->
+      <button onclick="openModal('crypto-stream')" class="text-left group bg-slate-900/60 hover:bg-slate-900 border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-6 transition-all duration-200 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-xs font-semibold px-2.5 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-md">Data Ingestion & ETL</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-slate-600 group-hover:text-indigo-400 transition"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white group-hover:text-indigo-300 transition">실시간 멀티 거래소 데이터 스트리밍 파이프라인</h3>
+          <p class="text-sm text-slate-400 mt-1 line-clamp-2">
+            Binance·Upbit 웹소켓 API를 비동기(Asyncio)로 연동하여 실시간 호가·체결 데이터를 통합 스키마로 정규화 및 적재
+          </p>
+        </div>
+        <div class="flex gap-2 mt-5 text-xs text-slate-500">
+          <span>#Asyncio</span>
+          <span>#WebSocket</span>
+          <span>#SchemaNormalization</span>
+        </div>
+      </button>
+
+      <!-- Card 3: PocketHome -->
+      <button onclick="openModal('pockethome')" class="text-left group bg-slate-900/60 hover:bg-slate-900 border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-6 transition-all duration-200 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-xs font-semibold px-2.5 py-1 bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-md">Cloud & Data Serving</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-slate-600 group-hover:text-indigo-400 transition"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white group-hover:text-indigo-300 transition">PocketHome: 다목적 환경 최적화 클라우드 시스템</h3>
+          <p class="text-sm text-slate-400 mt-1 line-clamp-2">
+            다중 사용자 데이터를 수집·분석하여 최적의 환경 제어값을 서빙하는 Google Cloud Run & Firestore 기반 엔드투엔드 파이프라인
+          </p>
+        </div>
+        <div class="flex gap-2 mt-5 text-xs text-slate-500">
+          <span>#GoogleCloudRun</span>
+          <span>#Firestore</span>
+          <span>#Optimization</span>
+        </div>
+      </button>
+
+      <!-- Card 4: CDS Big Data & LLaDA -->
+      <button onclick="openModal('bigdata-ai')" class="text-left group bg-slate-900/60 hover:bg-slate-900 border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-6 transition-all duration-200 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-xs font-semibold px-2.5 py-1 bg-purple-500/10 text-purple-400 border border-purple-500/20 rounded-md">Big Data & AI Research</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-slate-600 group-hover:text-indigo-400 transition"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white group-hover:text-indigo-300 transition">CDS 빅데이터 경진대회 수상 & Diffusion LLM 연구</h3>
+          <p class="text-sm text-slate-400 mt-1 line-clamp-2">
+            대규모 데이터 전처리·시각화 파이프라인 구축(우수상) 및 LLaDA Gumbel-Max 샘플링 메커니즘 심층 분석·시각화
+          </p>
+        </div>
+        <div class="flex gap-2 mt-5 text-xs text-slate-500">
+          <span>#BigDataAnalytics</span>
+          <span>#DiffusionLLM</span>
+          <span>#KNIME</span>
+        </div>
+      </button>
+
+      <!-- Card 5: Teamwork & Leadership (Full width) -->
+      <button onclick="openModal('leadership')" class="md:col-span-2 text-left group bg-slate-900/40 hover:bg-slate-900 border border-slate-800/80 hover:border-indigo-500/50 rounded-2xl p-5 transition-all duration-200 flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+          <div>
+            <h3 class="text-base font-bold text-white group-hover:text-indigo-300 transition">Why Me: 끝까지 완주하는 오너십과 유연한 협업 능력</h3>
+            <p class="text-xs text-slate-400 mt-0.5">팀원 이탈 위기를 극복한 단독 풀스택 완주 경험 & 정기 합주 원칙으로 이끌어낸 밴드 리딩 스토리</p>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-slate-600 group-hover:text-indigo-400 transition ml-4"></i>
+      </button>
+
+    </section>
+  </main>
+
+  <!-- Minimal Footer -->
+  <footer class="py-6 text-center text-xs text-slate-600 border-t border-slate-900">
+    © 2026 Siwoong Lee. Designed for Data & AI Engineering Portfolio.
+  </footer>
+
+  <!-- Modal Backdrop & Container -->
+  <div id="modal-backdrop" onclick="closeModal(event)" class="fixed inset-0 bg-black/75 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div id="modal-content" class="modal-enter bg-slate-900 border border-slate-700 rounded-2xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-6 md:p-8 relative shadow-2xl" onclick="event.stopPropagation()">
+      <!-- Close Button -->
+      <button onclick="closeModal()" class="absolute top-5 right-5 w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white flex items-center justify-center transition">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <!-- Dynamic Body -->
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Modal Data & Script -->
+  <script>
+    const modalData = {
+      'lg-intern': {
+        badge: 'Work Experience | 2026.01 - 2026.02',
+        title: 'LG전자 HS사업본부 인턴십',
+        subtitle: '다국어 음성 합성(TTS) 서비스 상용화를 위한 데이터 전처리 및 파이프라인 고도화',
+        content: `
+          <div class="space-y-5 text-sm text-slate-300 leading-relaxed">
+            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+              <div class="text-xs font-bold text-indigo-400 uppercase mb-1">Data Pipeline Architecture</div>
+              <p class="text-xs text-slate-400">Raw 다국어 음성/텍스트 수집 ➔ 노이즈 필터링 & 텍스트 정규화(Normalization) ➔ 음성-텍스트 정렬(Alignment) 검증 ➔ TTS 모델 학습 데이터셋 적재</p>
+            </div>
+            <div>
+              <h4 class="font-bold text-white mb-1">1. 문제 정의 (Challenge)</h4>
+              <p>다국어 TTS 모델 상용화 과정에서 언어별 특수 기호, 숫자 읽기 규칙 불일치 및 오디오 노이즈로 인해 모델 학습 시 발음 왜곡과 품질 저하 병목이 발생했습니다.</p>
+            </div>
+            <div>
+              <h4 class="font-bold text-white mb-1">2. 해결 방안 (Action)</h4>
+              <ul class="list-disc list-inside space-y-1 text-slate-300">
+                <li>대규모 비정형 음성 및 스크립트 데이터의 이상치(Outlier)를 탐지하고 정제하는 <strong>자동화 전처리 스크립트</strong> 구축</li>
+                <li>현업 엔지니어들과 협업하여 데이터 품질 검증 기준을 수립하고, 학습 파이프라인에 투입되는 데이터 정합성 확보</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-bold text-white mb-1">3. 성과 및 배운 점 (Impact)</h4>
+              <p>AI 모델의 성능은 알고리즘 튜닝 이상으로 <strong>고품질 데이터 엔지니어링 파이프라인</strong>에 좌우된다는 것을 현업에서 체득했으며, 대용량 비정형 데이터를 다루는 실무 역량을 길렀습니다.</p>
+            </div>
+          </div>
+        `,
+        links: []
+      },
+      'crypto-stream': {
+        badge: 'Data Ingestion & Streaming Project | 2025.12',
+        title: '실시간 멀티 거래소 데이터 스트리밍 파이프라인',
+        subtitle: '이기종(Binance, Upbit) 실시간 웹소켓 데이터의 비동기 수집·정규화·적재 엔진',
+        content: `
+          <div class="space-y-5 text-sm text-slate-300 leading-relaxed">
+            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+              <div class="text-xs font-bold text-emerald-400 uppercase mb-1">Streaming Architecture</div>
+              <p class="text-xs text-slate-400">Binance / Upbit WebSocket API ➔ Python Asyncio Event Loop (비동기 병렬 수신) ➔ Schema Normalizer (포맷 단일화) ➔ Unified Stream Storage</p>
+            </div>
+            <div>
+              <h4 class="font-bold text-white mb-1">1. 기술적 배경 및 병목 (Problem)</h4>
+              <p>초당 수십~수백 건 발생하는 글로벌/국내 거래소의 실시간 호가(Orderbook) 및 체결(Trade) 데이터를 동기 방식으로 처리할 경우 I/O 블로킹으로 인한 데이터 유실과 타임스탬프 지연이 발생했습니다. 또한 거래소마다 JSON 페이로드 스키마가 상이해 통합 분석이 어려웠습니다.</p>
+            </div>
+            <div>
+              <h4 class="font-bold text-white mb-1">2. 아키텍처 설계 및 해결 (Solution)</h4>
+              <ul class="list-disc list-inside space-y-1">
+                <li><code>asyncio</code>와 비동기 WebSocket 세션을 활용해 단일 스레드 내 컨텍스트 스위칭 오버헤드를 최소화한 멀티 스트림 수신부 구현 (<code>step_a.py</code> ~ <code>step_c.py</code> 모듈화)</li>
+                <li>서로 다른 필드명과 타임스탬프 규격을 온더플라이(On-the-fly)로 변환하는 <strong>데이터 정규화(Normalization) 레이어</strong> 설계</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-bold text-white mb-1">3. 엔지니어링 역량 (Takeaway)</h4>
+              <p>실시간 스트리밍 데이터의 유실 없는 수집(Ingestion)과 이기종 데이터 원천의 스키마 통합이라는 데이터 엔지니어링의 핵심 축을 밑바닥부터 구현했습니다.</p>
+            </div>
+          </div>
+        `,
+        links: [
+          { label: 'GitHub Repository (추가 예정)', url: 'https://github.com/' }
+        ]
+      },
+      'pockethome': {
+        badge: 'Cloud Architecture & Optimization | 2025.11 - 2025.12',
+        title: 'PocketHome: 공유 공간 환경 최적화 데이터 서비스',
+        subtitle: '다중 사용자 데이터 기반 Multi-Objective Optimization 모델링 및 클라우드 서빙',
+        content: `
+          <div class="space-y-5 text-sm text-slate-300 leading-relaxed">
+            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+              <div class="text-xs font-bold text-blue-400 uppercase mb-1">Cloud & Data Flow</div>
+              <p class="text-xs text-slate-400">Client (Flutter) ➔ Firestore (NoSQL 실시간 상태 동기화) ➔ Google Cloud Run (Python 최적화 연산 컨테이너) ➔ 최적 환경 지표 서빙</p>
+            </div>
+            <div>
+              <h4 class="font-bold text-white mb-1">1. 데이터 모델링 및 시스템 설계</h4>
+              <p>공유 공간 내 여러 사용자의 상충하는 환경 선호도 데이터와 센서 상태 데이터를 효율적으로 저장·조회하기 위해 <strong>Cloud Firestore 기반의 NoSQL 데이터 스키마</strong>를 설계했습니다.</p>
+            </div>
+            <div>
+              <h4 class="font-bold text-white mb-1">2. 서버리스 연산 파이프라인 및 올라운더 완주</h4>
+              <ul class="list-disc list-inside space-y-1">
+                <li>수집된 다차원 데이터를 바탕으로 파레토 최적해를 도출하는 <strong>다목적 최적화(Multi-Objective Optimization) 로직</strong>을 Python으로 구현하고 <strong>Google Cloud Run</strong>에 컨테이너 기반 서버리스로 배포</li>
+                <li>프로젝트 중반 팀원 이탈이라는 위기 상황에서도 DB 설계, 백엔드 최적화 엔진, 프론트엔드 연동을 단독으로 책임지며 기한 내 완벽히 완주</li>
+              </ul>
+            </div>
+          </div>
+        `,
+        links: [
+          { label: '시스템 아키텍처 / GitHub (추가 예정)', url: 'https://github.com/' }
+        ]
+      },
+      'bigdata-ai': {
+        badge: 'Big Data Award & AI Research | 2025.12 - 2026.09',
+        title: '빅데이터 파이프라인 구축 & Diffusion LLM 아키텍처 분석',
+        subtitle: '데이터 전처리·분석 역량 검증(우수상) 및 차세대 AI 모델의 수학적 샘플링 구조 해부',
+        content: `
+          <div class="space-y-5 text-sm text-slate-300 leading-relaxed">
+            <div>
+              <h4 class="font-bold text-white mb-1">🏆 제2회 CDS 빅데이터 경진대회 우수상 (CDS 빅데이터 대학연합)</h4>
+              <p>복잡하고 결측치가 포함된 대규모 데이터셋을 바탕으로 KNIME 분석 워크플로우를 구축했습니다. 체계적인 데이터 클렌징, 파생 변수 생성(Feature Engineering), 시각화를 통해 비즈니스 인사이트를 도출하여 우수상을 수상했습니다.</p>
+            </div>
+            <hr class="border-slate-800">
+            <div>
+              <h4 class="font-bold text-white mb-1">🧠 Diffusion LLM (LLaDA) & Gumbel-Max 샘플링 심층 분석</h4>
+              <p>데이터 엔지니어가 AI 파이프라인을 효과적으로 설계하려면 모델 내부의 데이터 흐름과 확률 분포 처리 방식을 이해해야 합니다. 최신 Diffusion 기반 언어 모델인 LLaDA의 아키텍처와 범주형 분포 샘플링 기법인 <strong>Gumbel-Max Trick</strong>을 수식·코드 단위로 분석하고, 이를 시각화한 기술 교육 영상을 제작해 유튜브에 배포했습니다.</p>
+            </div>
+          </div>
+        `,
+        links: [
+          { label: 'YouTube 해설 영상 보기 (링크 연결 가능)', url: 'https://youtube.com/' }
+        ]
+      },
+      'leadership': {
+        badge: 'Core Competency & Culture Fit',
+        title: '책임감 있는 오너십과 조율의 리더십',
+        subtitle: '기술적 깊이를 팀의 성과로 연결하는 커뮤니케이션 역량',
+        content: `
+          <div class="space-y-4 text-sm text-slate-300 leading-relaxed">
+            <div>
+              <h4 class="font-bold text-white mb-1">1. 위기 상황에서 증명된 '끝까지 해내는 오너십'</h4>
+              <p>학과 및 캡스톤 프로젝트 진행 중 예기치 못한 팀원 중도 하차 상황에서도 프로젝트를 축소하지 않고, 데이터 스키마 설계부터 클라우드 서버 배포, 클라이언트 구현까지 빠르게 학습하며 전 과정을 완주했습니다. 낯선 기술 스택이나 병목 앞에서도 주도적으로 해결책을 찾는 것이 저의 가장 큰 무기입니다.</p>
+            </div>
+            <div>
+              <h4 class="font-bold text-white mb-1">2. '월 1회 정기 합주' 원칙으로 만들어낸 조율과 시너지</h4>
+              <p>외부 밴드 활동을 주도하며 각자 전공과 일정이 다른 멤버들 사이에서 명확한 마일스톤과 '정기 합주 원칙'을 세워 성공적인 공연을 완성했습니다. 또한 공군 일본어 식별보조병 복무 및 고교 수학 동아리 부장 경험을 통해, 다양한 이해관계자(분석가, AI 모델러, 현업 부서)와 소통해야 하는 데이터 엔지니어로서의 탄탄한 협업 기반을 다졌습니다.</p>
+            </div>
+          </div>
+        `,
+        links: []
+      }
+    };
+
+    function openModal(id) {
+      const data = modalData[id];
+      if (!data) return;
+
+      const linksHtml = data.links.map(link => `
+        <a href="${link.url}" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold rounded-lg transition">
+          <i class="fa-solid fa-link"></i> ${link.label}
+        </a>
+      `).join('');
+
+      document.getElementById('modal-body').innerHTML = `
+        <div class="text-xs font-semibold text-indigo-400 mb-2">${data.badge}</div>
+        <h3 class="text-2xl font-bold text-white mb-1">${data.title}</h3>
+        <p class="text-sm text-slate-400 mb-6 pb-4 border-b border-slate-800">${data.subtitle}</p>
+        ${data.content}
+        ${linksHtml ? `<div class="mt-6 pt-4 border-t border-slate-800 flex flex-wrap gap-3">${linksHtml}</div>` : ''}
+      `;
+
+      const backdrop = document.getElementById('modal-backdrop');
+      backdrop.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(event) {
+      if (event && event.target !== document.getElementById('modal-backdrop')) return;
+      document.getElementById('modal-backdrop').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+</body>
+</html>
