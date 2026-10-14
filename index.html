@@ -32,7 +32,7 @@
           이시웅 <span class="text-slate-500 font-normal text-2xl">| Siwoong Lee</span>
         </h1>
         <p class="text-slate-400 mt-2 text-sm md:text-base">
-          실시간 데이터 수집·정규화부터 AI 모델 추론 최적화 및 클라우드 서빙 파이프라인을 구축하는 데이터 엔지니어입니다.
+          대규모 비정형 데이터 전처리부터 AI 모델 추론 최적화 및 클라우드 서빙 파이프라인을 구축하는 데이터 엔지니어입니다.
         </p>
       </div>
       
@@ -62,12 +62,12 @@
       <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4">
         <div class="text-xs text-slate-400">English & Japanese</div>
         <div class="font-bold text-sm text-emerald-400 mt-1">양국어 OPIc AL</div>
-        <div class="text-xs text-slate-400 mt-0.5">TOEIC 885 · JPT 895</div>
+        <div class="text-xs text-slate-400 mt-0.5">TOEIC 885 · JPT 895 · N1</div>
       </div>
       <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-4">
-        <div class="text-xs text-slate-400">Global Leadership</div>
+        <div class="text-xs text-slate-400">Global & Military Spec</div>
         <div class="font-bold text-sm text-indigo-400 mt-1">공대 글로벌 홍보대사</div>
-        <div class="text-xs text-slate-400 mt-0.5">외국인 유학생 지원·튜터링</div>
+        <div class="text-xs text-slate-400 mt-0.5">공군 일본어 식별보조병</div>
       </div>
     </section>
 
@@ -77,7 +77,7 @@
       <span class="text-xs text-indigo-400"><i class="fa-regular fa-hand-pointer mr-1"></i>카드를 클릭하면 상세 아키텍처와 이력을 볼 수 있습니다</span>
     </div>
 
-    <!-- Interactive Cards Grid (Minimal Front) -->
+    <!-- Interactive Cards Grid (2x2 Balanced + 1 Full Width) -->
     <section class="grid md:grid-cols-2 gap-4">
 
       <!-- Card 1: LG Electronics Internship -->
@@ -99,26 +99,7 @@
         </div>
       </button>
 
-      <!-- Card 2: Crypto Streaming Engine -->
-      <button onclick="openModal('crypto-stream')" class="text-left group bg-slate-900/60 hover:bg-slate-900 border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-6 transition-all duration-200 flex flex-col justify-between">
-        <div>
-          <div class="flex justify-between items-center mb-3">
-            <span class="text-xs font-semibold px-2.5 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-md">Real-Time Data Ingestion</span>
-            <i class="fa-solid fa-arrow-up-right-from-square text-slate-600 group-hover:text-indigo-400 transition"></i>
-          </div>
-          <h3 class="text-lg font-bold text-white group-hover:text-indigo-300 transition">실시간 멀티 거래소 데이터 스트리밍 엔진</h3>
-          <p class="text-sm text-slate-400 mt-1 line-clamp-2">
-            Binance·Upbit 웹소켓 API를 비동기(Asyncio)로 연동하여 실시간 호가·체결 데이터를 통합 스키마로 정규화 및 적재
-          </p>
-        </div>
-        <div class="flex flex-wrap gap-2 mt-5 text-xs text-slate-500">
-          <span>#Python_Asyncio</span>
-          <span>#WebSocket</span>
-          <span>#SchemaNormalization</span>
-        </div>
-      </button>
-
-      <!-- Card 3: PocketHome -->
+      <!-- Card 2: PocketHome -->
       <button onclick="openModal('pockethome')" class="text-left group bg-slate-900/60 hover:bg-slate-900 border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-6 transition-all duration-200 flex flex-col justify-between">
         <div>
           <div class="flex justify-between items-center mb-3">
@@ -137,7 +118,7 @@
         </div>
       </button>
 
-      <!-- Card 4: CDS Big Data Course & Award (Highlighted) -->
+      <!-- Card 3: CDS Big Data Course & Award (Highlighted) -->
       <button onclick="openModal('cds-bigdata')" class="text-left group bg-slate-900/60 hover:bg-slate-900 border border-amber-500/30 hover:border-amber-400 rounded-2xl p-6 transition-all duration-200 flex flex-col justify-between">
         <div>
           <div class="flex justify-between items-center mb-3">
@@ -148,32 +129,36 @@
           </div>
           <h3 class="text-lg font-bold text-white group-hover:text-amber-300 transition">CDS 빅데이터 전문가 과정 수료 & 경진대회 우수상</h3>
           <p class="text-sm text-slate-400 mt-1 line-clamp-2">
-            80시간의 빅데이터 전문가 과정 이수 및 KNIME 기반 대규모 데이터 전처리·분석·시각화 파이프라인 구축으로 우수상 수상
+            80시간 전문가 과정(JMP·통계 모델링) 이수 및 KNIME 기반 데이터 전처리·시각화 파이프라인 구축으로 우수상 수상
           </p>
         </div>
         <div class="flex flex-wrap gap-2 mt-5 text-xs text-slate-500">
           <span>#CDS빅데이터경진대회_우수상</span>
-          <span>#KNIME</span>
-          <span>#FeatureEngineering</span>
+          <span>#KNIME_JMP</span>
+          <span>#StatisticalModeling</span>
         </div>
       </button>
 
-      <!-- Card 5: AI Research & Service Planning (LLaDA & SkyCare) -->
-      <button onclick="openModal('ai-research')" class="md:col-span-2 text-left group bg-slate-900/60 hover:bg-slate-900 border border-slate-800 hover:border-purple-500/50 rounded-2xl p-6 transition-all duration-200 flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <!-- Card 4: AI Research & Service Planning (LLaDA & SkyCare) -->
+      <button onclick="openModal('ai-research')" class="text-left group bg-slate-900/60 hover:bg-slate-900 border border-slate-800 hover:border-purple-500/50 rounded-2xl p-6 transition-all duration-200 flex flex-col justify-between">
         <div>
-          <div class="flex items-center gap-2 mb-2">
-            <span class="text-xs font-semibold px-2.5 py-1 bg-purple-500/10 text-purple-400 border border-purple-500/20 rounded-md">AI Architecture & Domain Service</span>
-            <span class="text-xs text-slate-500">#Diffusion_LLM #Gumbel_Max #STT_OCR</span>
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-xs font-semibold px-2.5 py-1 bg-purple-500/10 text-purple-400 border border-purple-500/20 rounded-md">AI Architecture & Domain Data</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-slate-600 group-hover:text-purple-400 transition"></i>
           </div>
-          <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition">Diffusion LLM (LLaDA) 샘플링 분석 & SkyCare 항공 안전 AI 모니터링 기획</h3>
-          <p class="text-sm text-slate-400 mt-1">
-            최신 생성형 AI의 확률적 샘플링(Gumbel-Max) 수식·코드 분석 및 STT·OCR 데이터 기반 실시간 항공 이상 탐지 대시보드 설계
+          <h3 class="text-lg font-bold text-white group-hover:text-purple-300 transition">Diffusion LLM 분석 & SkyCare 항공 안전 AI 기획</h3>
+          <p class="text-sm text-slate-400 mt-1 line-clamp-2">
+            LLaDA 확률적 샘플링(Gumbel-Max) 수식·코드 분석 및 STT·OCR 데이터 기반 실시간 항공 이상 탐지 대시보드 설계
           </p>
         </div>
-        <i class="fa-solid fa-arrow-up-right-from-square text-slate-600 group-hover:text-purple-400 transition shrink-0"></i>
+        <div class="flex flex-wrap gap-2 mt-5 text-xs text-slate-500">
+          <span>#Diffusion_LLM</span>
+          <span>#Gumbel_Max</span>
+          <span>#STT_OCR_Pipeline</span>
+        </div>
       </button>
 
-      <!-- Card 6: Global Ambassador & Language Certifications (Highlighted Full Width) -->
+      <!-- Card 5: Global Ambassador, Air Force & Language Certifications (Highlighted Full Width) -->
       <button onclick="openModal('global-certs')" class="md:col-span-2 text-left group bg-gradient-to-r from-indigo-950/40 via-slate-900/80 to-emerald-950/30 hover:from-indigo-900/40 border border-indigo-500/30 hover:border-indigo-400 rounded-2xl p-6 transition-all duration-200 flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div class="flex items-start md:items-center gap-4">
           <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 shrink-0 text-lg">
@@ -181,13 +166,13 @@
           </div>
           <div>
             <div class="flex flex-wrap items-center gap-2 mb-1">
-              <span class="text-xs font-bold text-indigo-400 uppercase tracking-wider">Global Ambassador & Verified Languages</span>
+              <span class="text-xs font-bold text-indigo-400 uppercase tracking-wider">Global Ambassador · ROKAF Specialist · Languages</span>
             </div>
             <h3 class="text-base md:text-lg font-bold text-white group-hover:text-indigo-300 transition">
-              한양대 공과대학 글로벌 홍보대사 & 한·영·일 비즈니스 커뮤니케이션 자격
+              공대 글로벌 홍보대사 · 공군 일본어 식별보조병 & 영·일 최상위 어학 자격
             </h3>
             <p class="text-xs md:text-sm text-slate-300 mt-1">
-              영어 <strong>OPIc AL · TOEIC 885</strong> | 일본어 <strong>OPIc AL · JPT 895</strong> — 글로벌 기술 문서 분석 및 다국어 데이터 정합성 검증 역량
+              영어 <strong>OPIc AL · TOEIC 885</strong> | 일본어 <strong>OPIc AL · JPT 895 · JLPT N1</strong> — 실시간 외국어 정보 식별 및 다국어 데이터셋 검증 역량
             </p>
           </div>
         </div>
@@ -250,54 +235,26 @@
         `,
         links: []
       },
-      'crypto-stream': {
-        badge: 'Real-Time Data Engineering | 2025.12',
-        title: '실시간 멀티 거래소 데이터 스트리밍 파이프라인',
-        subtitle: '이기종(Binance, Upbit) 실시간 웹소켓 데이터의 비동기 수집·정규화·적재 엔진',
-        content: `
-          <div class="space-y-5 text-sm text-slate-300 leading-relaxed">
-            <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
-              <div class="text-xs font-bold text-emerald-400 uppercase mb-1">Streaming ETL Architecture</div>
-              <p class="text-xs text-slate-400">Binance / Upbit WebSocket API ➔ Python Asyncio Event Loop (비동기 병렬 수신) ➔ Schema Normalizer (포맷·타임스탬프 단일화) ➔ Unified Stream Storage</p>
-            </div>
-            <div>
-              <h4 class="font-bold text-white mb-1">1. 기술적 문제 정의 (Problem)</h4>
-              <p>초당 수십~수백 건 발생하는 글로벌/국내 거래소의 실시간 호가(Orderbook) 및 체결(Trade) 데이터를 동기 방식으로 수집할 경우 I/O 블로킹으로 인한 데이터 유실이 발생하며, 거래소마다 상이한 JSON 스키마로 인해 즉각적인 시계열 병합 분석이 불가능했습니다.</p>
-            </div>
-            <div>
-              <h4 class="font-bold text-white mb-1">2. 파이프라인 설계 및 구현 (Solution)</h4>
-              <ul class="list-disc list-inside space-y-1.5">
-                <li>Python <code>asyncio</code>와 비동기 WebSocket 세션을 활용해 멀티 스트림을 블로킹 없이 병렬 수신하는 인제스천(Ingestion) 모듈 구현</li>
-                <li>거래소별 상이한 필드명과 타임스탬프 단위를 온더플라이(On-the-fly)로 변환하는 <strong>스키마 정규화(Schema Normalization) 레이어</strong> 구축</li>
-                <li>단계별 스크립트(수집-변환-통합 적재) 모듈화를 통해 I/O 병목을 최소화하고 데이터 정합성 보장</li>
-              </ul>
-            </div>
-          </div>
-        `,
-        links: [
-          { label: 'GitHub Repository', url: 'https://github.com/' }
-        ]
-      },
       'pockethome': {
-        badge: 'Cloud Data & AI Serving | 학부 소프트웨어공학 프로젝트',
+        badge: 'Cloud Data & AI Serving | 2025.09 - 2025.12',
         title: 'PocketHome: 다수 사용자 선호도 중재 기반 AI 환경 최적화 시스템',
         subtitle: 'Firebase 실시간 데이터 동기화 및 GCP·FastAPI 기반 다목적 최적화 추론 파이프라인',
         content: `
           <div class="space-y-5 text-sm text-slate-300 leading-relaxed">
             <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
               <div class="text-xs font-bold text-blue-400 uppercase mb-1">End-to-End Cloud Pipeline</div>
-              <p class="text-xs text-slate-400">Multi-User App (Flutter) ➔ Firebase / Firestore (실시간 NoSQL 동기화) ➔ FastAPI on GCP Cloud Run (지도학습 및 다목적 최적화 추론) ➔ 환경 제어 파라미터 서빙</p>
+              <p class="text-xs text-slate-400">Multi-User App (Flutter) ➔ Firebase / Firestore (실시간 NoSQL 동기화) ➔ FastAPI on GCP VM/Cloud Run (지도학습 및 다목적 최적화 추론) ➔ 환경 제어 파라미터 서빙</p>
             </div>
             <div>
               <h4 class="font-bold text-white mb-1">1. 데이터 엔지니어링 & 백엔드 아키텍처</h4>
               <ul class="list-disc list-inside space-y-1.5">
                 <li><strong>실시간 NoSQL 데이터 파이프라인:</strong> 공용 공간 내 다수 사용자의 개별 선호도(온도·습도·조도)와 환경 상태 데이터를 지연 없이 수집·동기화하기 위해 <strong>Firebase / Cloud Firestore 스키마</strong> 설계</li>
-                <li><strong>AI 추론 결과 전송 파이프라인:</strong> 지도학습 및 다목적 최적화(Multi-Objective Optimization) 모델을 <strong>FastAPI</strong>와 <strong>Google Cloud (GCP)</strong> 컨테이너 환경에 구축하여 실시간 추론 결과를 클라이언트로 서빙</li>
+                <li><strong>AI 추론 결과 전송 파이프라인:</strong> 지도학습 및 다목적 최적화(Multi-Objective Optimization) 모델을 <strong>FastAPI</strong>와 <strong>Google Cloud (GCP)</strong> 환경에 구축하여 실시간 추론 결과를 클라이언트로 서빙</li>
               </ul>
             </div>
             <div>
-              <h4 class="font-bold text-white mb-1">2. 핵심 성과</h4>
-              <p>데이터 수집(NoSQL)부터 클라우드 기반 AI 모델 서빙(FastAPI/GCP), 클라이언트 연동까지 데이터 라이프사이클 전 과정을 직접 설계하고 완주하며 엔드투엔드 시스템 구축 역량을 입증했습니다.</p>
+              <h4 class="font-bold text-white mb-1">2. 핵심 성과 (단독 아키텍처 완주)</h4>
+              <p>팀원 2명이 중도 하차하는 돌발 상황 속에서도 시스템 아키텍처 설계부터 클라우드 DB 실시간 연동, AI 추론 서버 구축까지 전 과정을 홀로 책임지고 완주하며 강한 엔지니어링 오너십을 증명했습니다.</p>
             </div>
           </div>
         `,
@@ -308,7 +265,7 @@
       'cds-bigdata': {
         badge: 'Big Data Training & Competition Award | 2021.07',
         title: 'CDS 빅데이터 전문가 과정 수료 & 제2회 경진대회 우수상',
-        subtitle: '80시간 집중 교육 이수 및 대규모 데이터 전처리·분석·시각화 파이프라인 구축 성과',
+        subtitle: '80시간 집중 교육(JMP·통계 기법) 이수 및 KNIME 기반 데이터 전처리·모델링·시각화 성과',
         content: `
           <div class="space-y-5 text-sm text-slate-300 leading-relaxed">
             <div class="bg-amber-500/10 border border-amber-500/30 p-4 rounded-xl flex items-center justify-between">
@@ -321,13 +278,13 @@
             </div>
             <div>
               <h4 class="font-bold text-white mb-1">1. CDS 빅데이터 전문가 과정 (80시간) 수료</h4>
-              <p>데이터 수집, 정제, 탐색적 데이터 분석(EDA), 머신러닝 모델링 및 시각화에 이르는 빅데이터 처리 전 과정을 80시간의 집중 커리큘럼을 통해 체계적으로 학습하고 실습했습니다.</p>
+              <p>교육 기간 동안 <strong>JMP</strong>를 활용하여 다양한 통계 분석 기법과 탐색적 데이터 분석(EDA)을 학습하며 대규모 데이터에서 유의미한 통계적 인사이트를 도출하는 기본기를 다졌습니다.</p>
             </div>
             <div>
-              <h4 class="font-bold text-white mb-1">2. 경진대회 우수상 수상: 데이터 파이프라인 구축 및 분석</h4>
+              <h4 class="font-bold text-white mb-1">2. 경진대회 우수상 수상: KNIME 기반 데이터 파이프라인 구축</h4>
               <ul class="list-disc list-inside space-y-1.5">
-                <li><strong>데이터 클렌징 및 전처리:</strong> 결측치와 이상치가 혼재된 실무형 대규모 데이터셋을 대상으로 KNIME 워크플로우를 설계하여 재현 가능한(Reproducible) 전처리 파이프라인 구현</li>
-                <li><strong>피처 엔지니어링 & 시각화:</strong> 도메인 특성에 맞는 파생 변수를 도출하고, 분석 결과를 직관적인 대시보드 형태로 시각화하여 설득력 있는 데이터 인사이트 제시</li>
+                <li><strong>데이터 전처리 및 파이프라인화:</strong> 대회 본선에 선발되어 출전한 후, 결측치와 이상치가 혼재된 모의 빅데이터를 정제하기 위해 <strong>KNIME</strong> 기반의 모듈형 전처리 워크플로우를 구축</li>
+                <li><strong>통계 모델링 & 시각화:</strong> 도메인 맞춤형 파생 변수를 생성(Feature Engineering)하고 통계 모델링 및 직관적인 시각화를 수행하여 우수상을 수상</li>
               </ul>
             </div>
           </div>
@@ -335,14 +292,14 @@
         links: []
       },
       'ai-research': {
-        badge: 'AI Architecture & Domain Data Modeling',
+        badge: 'AI Architecture & Domain Data Modeling | 2025.05 - 2025.06',
         title: 'Diffusion LLM 아키텍처 분석 & SkyCare 항공 안전 모니터링 기획',
         subtitle: 'AI 모델 내부의 확률적 데이터 흐름 이해와 산업 도메인 데이터 활용 설계',
         content: `
           <div class="space-y-5 text-sm text-slate-300 leading-relaxed">
             <div>
-              <h4 class="font-bold text-white mb-1">1. Diffusion LLM (LLaDA) 및 Gumbel-Max 샘플링 메커니즘 해부</h4>
-              <p>AI 파이프라인을 설계하는 데이터 엔지니어로서 모델 내부의 수학적·확률적 데이터 흐름을 깊이 이해하기 위해 최신 Diffusion 기반 언어 모델(LLaDA)을 분석했습니다. 특히 범주형 분포에서 미분 가능한 샘플링을 수행하는 <strong>Gumbel-Max Trick</strong>을 수식과 코드 레벨에서 해부하고, 이를 시각화한 기술 해설 콘텐츠를 제작해 공유했습니다.</p>
+              <h4 class="font-bold text-white mb-1">1. Diffusion-based Text Generation LLM (LLaDA) 메커니즘 분석</h4>
+              <p>AI+X:딥러닝 프로젝트(A+)의 일환으로, 최신 생성형 AI 트렌드인 Diffusion 기반 언어 모델과 <strong>LLaDA 오픈소스 아키텍처</strong>를 대조 분석했습니다. 특히 범주형 분포에서 샘플링을 수행하는 <strong>Gumbel-Max Trick</strong>을 수식·코드 단위로 해부하여 기술 블로그 및 해설 영상을 제작했으며, 온디바이스/가전 AI 서비스에서의 추론 효율성을 검증했습니다.</p>
             </div>
             <hr class="border-slate-800">
             <div>
@@ -356,16 +313,16 @@
         ]
       },
       'global-certs': {
-        badge: 'Global Competency & Language Certifications',
-        title: '공과대학 글로벌 홍보대사 & 공인 어학 자격증',
-        subtitle: '글로벌 기술 문서 리서치, 다국어 데이터셋 검증 및 글로벌 팀 협업을 이끄는 소통 역량',
+        badge: 'Global Competency · Military Specialist · Certifications',
+        title: '공대 글로벌 홍보대사 · 공군 일본어 식별보조병 & 공인 어학 자격',
+        subtitle: '실전 외국어 정보 식별 경험과 글로벌 기술 소통, 다국어 데이터셋 정합성 검증 역량',
         content: `
           <div class="space-y-6 text-sm text-slate-300 leading-relaxed">
             
             <!-- Language Certificates Table -->
             <div>
               <h4 class="font-bold text-white mb-3 flex items-center gap-2">
-                <i class="fa-solid fa-certificate text-indigo-400"></i> 공인 어학 자격증 (영어 · 일본어 비즈니스 구사)
+                <i class="fa-solid fa-certificate text-indigo-400"></i> 공인 어학 자격증 (영·일 최상위 비즈니스 구사)
               </h4>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div class="bg-slate-950 border border-slate-800 p-4 rounded-xl">
@@ -382,8 +339,8 @@
                 <div class="bg-slate-950 border border-slate-800 p-4 rounded-xl">
                   <div class="text-xs font-bold text-indigo-400 mb-2">JAPANESE</div>
                   <div class="flex justify-between items-center py-1 border-b border-slate-800/80">
-                    <span class="font-medium text-white">JPT (일본어능력시험)</span>
-                    <span class="font-bold text-emerald-400">895점 <span class="text-xs text-slate-500 font-normal">| 2026.07</span></span>
+                    <span class="font-medium text-white">JPT / JLPT</span>
+                    <span class="font-bold text-emerald-400">895점 · N1 (146점)</span>
                   </div>
                   <div class="flex justify-between items-center pt-2">
                     <span class="font-medium text-white">OPIc (일본어)</span>
@@ -393,30 +350,46 @@
               </div>
             </div>
 
-            <!-- Global Ambassador Activities -->
+            <!-- Military & Global Ambassador Activities -->
             <div>
               <h4 class="font-bold text-white mb-2 flex items-center gap-2">
-                <i class="fa-solid fa-globe text-indigo-400"></i> 글로벌 리더십 및 소통 활동
+                <i class="fa-solid fa-globe text-indigo-400"></i> 주요 글로벌 실무 및 리더십 이력
               </h4>
               <div class="space-y-3">
+                
+                <!-- ROKAF -->
+                <div class="bg-slate-950/80 border border-indigo-500/30 p-4 rounded-xl">
+                  <div class="flex justify-between items-start">
+                    <span class="font-bold text-white"><i class="fa-solid fa-jet-fighter text-indigo-400 mr-1.5"></i>대한민국 공군 일본어 식별보조병 (병장 만기전역)</span>
+                    <span class="text-xs text-indigo-300 bg-indigo-500/10 border border-indigo-500/20 px-2.5 py-0.5 rounded">2023.02 - 2024.11</span>
+                  </div>
+                  <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+                    고등학생 시절 독학으로 시작한 일본어를 특기병 선발 수준까지 끌어올려 공군 일본어 식별보조병으로 복무했습니다. 고도의 정확성과 신속성이 요구되는 작전 환경에서 <strong>실시간 외국어 정보·신호를 식별하고 분류·보고하는 임무</strong>를 수행하며, 비정형 음성/언어 데이터를 정확하게 판독하고 무결성을 검증하는 실전 감각을 길렀습니다.
+                  </p>
+                </div>
+
+                <!-- Global Ambassador -->
                 <div class="bg-slate-950/60 border border-slate-800/80 p-4 rounded-xl">
                   <div class="flex justify-between items-start">
                     <span class="font-bold text-white">한양대학교 공과대학 글로벌 홍보대사</span>
                     <span class="text-xs text-slate-400 bg-slate-800 px-2.5 py-0.5 rounded">2022.03 - 2023.02</span>
                   </div>
-                  <p class="text-xs text-slate-300 mt-1.5">
-                    공과대학 대표 글로벌 홍보대사로 활동하며 외국인 유학생 지원 사업을 주도했습니다. 다양한 국적의 공학도들과 영어로 소통하며 학사·연구 환경 적응을 돕고 글로벌 캠퍼스 네트워크를 구축했습니다.
+                  <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+                    공과대학 대표 글로벌 홍보대사로서 외국인 유학생 지원 사업을 주도하며 다양한 국적의 엔지니어링 전공생들과 영어로 소통하고 학사·연구 환경 적응을 지원했습니다.
                   </p>
                 </div>
+
+                <!-- Summer School Tutoring -->
                 <div class="bg-slate-950/60 border border-slate-800/80 p-4 rounded-xl">
                   <div class="flex justify-between items-start">
                     <span class="font-bold text-white">한양대학교 온라인 서머 스쿨 튜터링</span>
                     <span class="text-xs text-slate-400 bg-slate-800 px-2.5 py-0.5 rounded">2021.07 - 2021.09</span>
                   </div>
-                  <p class="text-xs text-slate-300 mt-1.5">
-                    일본인 대학생들을 대상으로 교류 및 튜터링 프로그램을 진행하며 문화적·언어적 장벽을 넘어 정확하게 정보를 전달하는 커뮤니케이션 역량을 길렀습니다.
+                  <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+                    일본인 대학생 대상 온라인 교류 및 튜터링을 진행하며 글로벌 협업 및 명확한 정보 전달 역량을 발휘했습니다.
                   </p>
                 </div>
+
               </div>
             </div>
 
@@ -424,7 +397,7 @@
             <div class="bg-indigo-500/10 border border-indigo-500/20 p-4 rounded-xl">
               <div class="text-xs font-bold text-indigo-300 mb-1">💡 데이터 & AI 엔지니어링과의 시너지</div>
               <p class="text-xs text-slate-300">
-                최신 글로벌 AI 논문 및 오픈소스 공식 문서를 빠르게 습득할 수 있을 뿐 아니라, LG전자 인턴십 당시 <strong>다국어 음성·텍스트 데이터셋의 언어적 특성 및 정합성을 직접 검증</strong>하는 데 핵심적인 역할을 수행했습니다.
+                공군 식별보조병 복무와 글로벌 홍보대사로 다져진 다국어 역량은 최신 해외 AI 논문/오픈소스 분석을 가속할 뿐 아니라, LG전자 인턴십 당시 <strong>다국어 음성(TTS/STT) 데이터셋의 언어적 노이즈와 정렬 오류를 직접 검증·정제</strong>하는 데 결정적인 강점으로 작용했습니다.
               </p>
             </div>
 
